@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "cheese",
+	"version": "${version}",
+	"name": "Cheese",
+	"description": "This is a mod about cheese!",
+	"authors": [
+		"Ethan"
+	],
+	"contact": {
+		"homepage": "",
+		"sources": ""
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/cheese/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.ethan.cheese.Cheese"
+		],
+		"fabric-datagen": [
+			"net.ethan.cheese.CheeseDataGenerator"
+		],
+        "Client": [
+            "net.ethan.cheese.CheeseClient"
+        ]
+	},
+	"mixins": [
+		"cheese.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.1",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

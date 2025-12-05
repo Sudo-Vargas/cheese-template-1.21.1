@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CCC",
+    "CCC",
+    "CCC"
+  ],
+  "key": {
+    "C": {
+      "item": "cheese:cheese"
+    }
+  },
+  "result": {
+    "id": "cheese:block_of_cheese",
+    "count": 1
+  }
+}

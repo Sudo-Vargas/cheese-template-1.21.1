@@ -1,12 +1,25 @@
 {
-  "block.cheese.block_of_cheese": "Block of Cheese",
-  "item.cheese.cheddar_cheese_wedge": "Cheddar Cheese Wedge",
   "block.cheese.cheddar_cheese_block": "Cheddar Cheese Block",
-  "item.cheese.moldy_cheese_wedge": "Moldy Cheese Wedge",
   "block.cheese.moldy_cheese_block": "Moldy Cheese Block",
+  "block.cheese.block_of_cheese": "Block of Cheese",
+
+  "item.cheese.cheddar_cheese_wedge": "Cheddar Cheese Wedge",
+  "item.cheese.moldy_cheese_wedge": "Moldy Cheese Wedge",
   "item.cheese.cold_cheese_sandwich": "Cold Cheese Sandwich",
   "item.cheese.grilled_cheese_sandwich": "Grilled Cheese Sandwich",
   "item.cheese.cheese_on_a_stick": "Cheese on a Stick",
   "item.cheese.cheese_apple": "Cheese Apple",
-  "item.cheese.moldy_cheese_apple": "Moldy Cheese Apple"
+  "item.cheese.moldy_cheese_apple": "Moldy Cheese Apple",
+
+  "item.cheese.cheddar_sword": "Cheddar Sword",
+  "item.cheese.cheddar_pickaxe": "Cheddar Pickaxe",
+  "item.cheese.cheddar_shovel": "Cheddar Shovel",
+  "item.cheese.cheddar_axe": "Cheddar Axe",
+  "item.cheese.cheddar_hoe": "Cheddar Hoe",
+
+  "item.cheese.moldy_sword": "Moldy Sword",
+  "item.cheese.moldy_pickaxe": "Moldy Pickaxe",
+  "item.cheese.moldy_shovel": "Moldy Shovel",
+  "item.cheese.moldy_axe": "Moldy Axe",
+  "item.cheese.moldy_hoe": "Moldy Hoe"
 }

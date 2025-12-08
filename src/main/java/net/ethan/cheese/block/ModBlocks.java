@@ -33,9 +33,9 @@ public class ModBlocks {
     public static void registerModBlocks() {
         Cheese.LOGGER.info("Registering mod blocks for " + Cheese.MOD_ID);
 
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(fabricItemGroupEntries -> {
-            fabricItemGroupEntries.add(ModBlocks.CHEDDAR_CHEESE_BLOCK);
-            fabricItemGroupEntries.add(ModBlocks.MOLDY_CHEESE_BLOCK);
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(entries -> {
+            entries.add(ModBlocks.CHEDDAR_CHEESE_BLOCK);
+            entries.add(ModBlocks.MOLDY_CHEESE_BLOCK);
         });
     }
 

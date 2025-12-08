@@ -10,8 +10,51 @@ import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
+import net.minecraft.item.*;
 
 public class ModItems {
+
+    // Cheddar Tools
+    public static final Item CHEDDAR_SWORD = registerItem("cheddar_sword",
+            new SwordItem(ModToolMaterial.CHEDDAR, new Item.Settings()
+                    .attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterial.CHEDDAR, 3, -2.4f))));
+
+    public static final Item CHEDDAR_PICKAXE = registerItem("cheddar_pickaxe",
+            new PickaxeItem(ModToolMaterial.CHEDDAR, new Item.Settings()
+                    .attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterial.CHEDDAR, 1, -2.8f))));
+
+    public static final Item CHEDDAR_AXE = registerItem("cheddar_axe",
+            new AxeItem(ModToolMaterial.CHEDDAR, new Item.Settings()
+                    .attributeModifiers(AxeItem.createAttributeModifiers(ModToolMaterial.CHEDDAR, 6, -3.0f))));
+
+    public static final Item CHEDDAR_SHOVEL = registerItem("cheddar_shovel",
+            new ShovelItem(ModToolMaterial.CHEDDAR, new Item.Settings()
+                    .attributeModifiers(ShovelItem.createAttributeModifiers(ModToolMaterial.CHEDDAR, 1.5f, -3.0f))));
+
+    public static final Item CHEDDAR_HOE = registerItem("cheddar_hoe",
+            new HoeItem(ModToolMaterial.CHEDDAR, new Item.Settings()
+                    .attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterial.CHEDDAR, 0, -3.0f))));
+
+    // Moldy Tools
+    public static final Item MOLDY_SWORD = registerItem("moldy_sword",
+            new SwordItem(ModToolMaterial.MOLDY, new Item.Settings()
+                    .attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterial.MOLDY, 3, -2.4f))));
+
+    public static final Item MOLDY_PICKAXE = registerItem("moldy_pickaxe",
+            new PickaxeItem(ModToolMaterial.MOLDY, new Item.Settings()
+                    .attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterial.MOLDY, 1, -2.8f))));
+
+    public static final Item MOLDY_AXE = registerItem("moldy_axe",
+            new AxeItem(ModToolMaterial.MOLDY, new Item.Settings()
+                    .attributeModifiers(AxeItem.createAttributeModifiers(ModToolMaterial.MOLDY, 6, -3.0f))));
+
+    public static final Item MOLDY_SHOVEL = registerItem("moldy_shovel",
+            new ShovelItem(ModToolMaterial.MOLDY, new Item.Settings()
+                    .attributeModifiers(ShovelItem.createAttributeModifiers(ModToolMaterial.MOLDY, 1.5f, -3.0f))));
+
+    public static final Item MOLDY_HOE = registerItem("moldy_hoe",
+            new HoeItem(ModToolMaterial.MOLDY, new Item.Settings()
+                    .attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterial.MOLDY, 0, -3.0f))));
 
     public static final Item MOLDY_CHEESE_APPLE = registerItem("moldy_cheese_apple", new Item(new Item.Settings()
             .food(new FoodComponent.Builder()
@@ -81,5 +124,19 @@ public class ModItems {
             entries.add(CHEESE_APPLE);
             entries.add(MOLDY_CHEESE_APPLE);
         });
+
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(entries -> {
+            entries.add(CHEDDAR_SWORD);
+            entries.add(CHEDDAR_PICKAXE);
+            entries.add(CHEDDAR_AXE);
+            entries.add(CHEDDAR_SHOVEL);
+            entries.add(CHEDDAR_HOE);
+            entries.add(MOLDY_SWORD);
+            entries.add(MOLDY_PICKAXE);
+            entries.add(MOLDY_AXE);
+            entries.add(MOLDY_SHOVEL);
+            entries.add(MOLDY_HOE);
+        });
+
     }
 }

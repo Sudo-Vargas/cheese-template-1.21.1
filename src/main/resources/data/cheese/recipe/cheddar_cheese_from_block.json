@@ -2,11 +2,11 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "cheese:block_of_cheese"
+      "item": "cheese:cheddar_cheese_block"
     }
   ],
   "result": {
-    "id": "cheese:cheese",
+    "id": "cheese:cheddar_cheese_wedge",
     "count": 9
   }
 }

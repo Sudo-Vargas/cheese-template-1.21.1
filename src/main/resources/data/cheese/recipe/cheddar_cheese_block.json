@@ -7,11 +7,11 @@
   ],
   "key": {
     "C": {
-      "item": "cheese:cheese"
+      "item": "cheese:cheddar_cheese_wedge"
     }
   },
   "result": {
-    "id": "cheese:block_of_cheese",
+    "id": "cheese:cheddar_cheese_block",
     "count": 1
   }
 }

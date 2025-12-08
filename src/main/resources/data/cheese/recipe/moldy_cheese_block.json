@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CCC",
+    "CCC",
+    "CCC"
+  ],
+  "key": {
+    "C": {
+      "item": "cheese:moldy_cheese_wedge"
+    }
+  },
+  "result": {
+    "id": "cheese:moldy_cheese_block",
+    "count": 1
+  }
+}

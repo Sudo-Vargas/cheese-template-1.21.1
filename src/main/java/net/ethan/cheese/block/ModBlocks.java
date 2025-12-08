@@ -14,6 +14,9 @@ import net.minecraft.util.Identifier;
 
 public class ModBlocks {
 
+    public static final Block MOLDY_CHEESE_BLOCK = registerBlock("moldy_cheese_block",
+            new Block(AbstractBlock.Settings.create().strength(0.7F).sounds(BlockSoundGroup.SLIME)));
+
     public static final Block CHEDDAR_CHEESE_BLOCK = registerBlock("cheddar_cheese_block",
             new Block(AbstractBlock.Settings.create().strength(0.7F).sounds(BlockSoundGroup.SLIME)));
 
@@ -31,8 +34,8 @@ public class ModBlocks {
         Cheese.LOGGER.info("Registering mod blocks for " + Cheese.MOD_ID);
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(fabricItemGroupEntries -> {
-
             fabricItemGroupEntries.add(ModBlocks.CHEDDAR_CHEESE_BLOCK);
+            fabricItemGroupEntries.add(ModBlocks.MOLDY_CHEESE_BLOCK);
         });
     }
 

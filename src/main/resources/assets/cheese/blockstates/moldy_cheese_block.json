@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "cheese:block/moldy_cheese_block"
+    }
+  }
+}

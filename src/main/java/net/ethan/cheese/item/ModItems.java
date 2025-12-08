@@ -15,6 +15,7 @@ public class ModItems {
 
     public static final Item MOLDY_CHEESE_WEDGE = registerItem("moldy_cheese_wedge", new Item(new Item.Settings()
             .food(new FoodComponent.Builder()
+                    .alwaysEdible()
                     .nutrition(1)
                     .saturationModifier(0.1f)
                     .snack()

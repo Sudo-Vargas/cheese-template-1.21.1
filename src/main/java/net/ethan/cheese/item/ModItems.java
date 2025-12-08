@@ -13,6 +13,29 @@ import net.minecraft.util.Identifier;
 
 public class ModItems {
 
+    public static final Item MOLDY_CHEESE_APPLE = registerItem("moldy_cheese_apple", new Item(new Item.Settings()
+            .food(new FoodComponent.Builder()
+                    .nutrition(2)
+                    .saturationModifier(0.2f)
+                    .snack()
+                    .statusEffect(new StatusEffectInstance(StatusEffects.NAUSEA,200), 1.0f)
+                    .statusEffect(new StatusEffectInstance(StatusEffects.POISON,200), 1.0f)
+                    .build())));
+
+    public static final Item CHEESE_APPLE = registerItem("cheese_apple", new Item(new Item.Settings()
+            .food(new FoodComponent.Builder()
+                    .nutrition(5)
+                    .saturationModifier(0.4f)
+                    .snack()
+                    .build())));
+
+    public static final Item CHEESE_ON_A_STICK = registerItem("cheese_on_a_stick", new Item(new Item.Settings()
+            .food(new FoodComponent.Builder()
+                    .nutrition(4)
+                    .saturationModifier(0.3f)
+                    .snack()
+                    .build())));
+
     public static final Item GRILLED_CHEESE_SANDWICH = registerItem("grilled_cheese_sandwich", new Item(new Item.Settings()
             .food(new FoodComponent.Builder()
                     .nutrition(8)
@@ -31,6 +54,7 @@ public class ModItems {
                     .saturationModifier(0.1f)
                     .snack()
                     .statusEffect(new StatusEffectInstance(StatusEffects.NAUSEA,200), 1.0f)
+                    .statusEffect(new StatusEffectInstance(StatusEffects.POISON,200), 1.0f)
                     .build())));
 
     public static final Item CHEDDAR_CHEESE_WEDGE = registerItem("cheddar_cheese_wedge", new Item(new Item.Settings()
@@ -53,6 +77,9 @@ public class ModItems {
             entries.add(MOLDY_CHEESE_WEDGE);
             entries.add(COLD_CHEESE_SANDWICH);
             entries.add(GRILLED_CHEESE_SANDWICH);
+            entries.add(CHEESE_ON_A_STICK);
+            entries.add(CHEESE_APPLE);
+            entries.add(MOLDY_CHEESE_APPLE);
         });
     }
 }

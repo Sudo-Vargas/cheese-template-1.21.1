@@ -1,4 +1,5 @@
 {
-  "item.cheese.cheese": "Cheese",
-  "block.cheese.block_of_cheese": "Block of Cheese"
+  "block.cheese.block_of_cheese": "Block of Cheese",
+  "item.cheese.cheddar_cheese_wedge": "Cheddar Cheese Wedge",
+  "block.cheese.cheddar_cheese_block": "Cheddar Cheese Block"
 }

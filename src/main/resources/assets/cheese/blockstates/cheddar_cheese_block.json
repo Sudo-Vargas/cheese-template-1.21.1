@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "cheese:block/cheddar_cheese_block"
+    }
+  }
+}

@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "cheese:item/cheese"
+    "layer0": "cheese:item/cheddar_cheese_wedge"
   }
 }

@@ -11,12 +11,13 @@ import net.minecraft.util.Identifier;
 
 public class ModItems {
 
-    public static final Item CHEESE = registerItem("cheese", new Item(new Item.Settings()
+    public static final Item CHEDDAR_CHEESE_WEDGE = registerItem("cheddar_cheese_wedge", new Item(new Item.Settings()
             .food(new FoodComponent.Builder()
                     .nutrition(4)
                     .saturationModifier(0.3f)
                     .snack()
                     .build())));
+
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(Cheese.MOD_ID, name), item);
@@ -26,7 +27,8 @@ public class ModItems {
         Cheese.LOGGER.info("Registering mod items for " + Cheese.MOD_ID);
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(entries ->{
-            entries.add(CHEESE);
+
+            entries.add(CHEDDAR_CHEESE_WEDGE);
         });
     }
 }

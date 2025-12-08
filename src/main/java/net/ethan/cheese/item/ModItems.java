@@ -13,10 +13,16 @@ import net.minecraft.util.Identifier;
 
 public class ModItems {
 
-    public static final Item COLD_CHEESE_SANDWICH = registerItem("cold_cheese_sandwich", new Item(new Item.Settings()
+    public static final Item GRILLED_CHEESE_SANDWICH = registerItem("grilled_cheese_sandwich", new Item(new Item.Settings()
             .food(new FoodComponent.Builder()
                     .nutrition(8)
                     .saturationModifier(0.8f)
+                    .build())));
+
+    public static final Item COLD_CHEESE_SANDWICH = registerItem("cold_cheese_sandwich", new Item(new Item.Settings()
+            .food(new FoodComponent.Builder()
+                    .nutrition(6)
+                    .saturationModifier(0.5f)
                     .build())));
 
     public static final Item MOLDY_CHEESE_WEDGE = registerItem("moldy_cheese_wedge", new Item(new Item.Settings()
@@ -46,6 +52,7 @@ public class ModItems {
             entries.add(CHEDDAR_CHEESE_WEDGE);
             entries.add(MOLDY_CHEESE_WEDGE);
             entries.add(COLD_CHEESE_SANDWICH);
+            entries.add(GRILLED_CHEESE_SANDWICH);
         });
     }
 }

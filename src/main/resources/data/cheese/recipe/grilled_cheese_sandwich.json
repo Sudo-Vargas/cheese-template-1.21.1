@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "cheese:cold_cheese_sandwich"
+  },
+  "result": {
+    "id": "cheese:grilled_cheese_sandwich"
+  },
+  "experience": 0.2,
+  "cookingtime": 200
+}

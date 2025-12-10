@@ -2,6 +2,7 @@ package net.ethan.cheese;
 
 import net.ethan.cheese.block.ModBlocks;
 import net.ethan.cheese.item.ModItems;
+import net.ethan.cheese.util.ModLootTableModifiers;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -22,5 +23,6 @@ public class Cheese implements ModInitializer {
 
         ModItems.registerModItems();
         ModBlocks.registerModBlocks();
+        ModLootTableModifiers.modifyLootTables();
 	}
 }

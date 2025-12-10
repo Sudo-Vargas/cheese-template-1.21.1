@@ -9,8 +9,8 @@ import net.minecraft.registry.tag.TagKey;
 import java.util.function.Supplier;
 
 public enum ModToolMaterial implements ToolMaterial {
-    CHEDDAR(32, 12.0f, 2.0f, 22, () -> Ingredient.ofItems(ModItems.CHEDDAR_CHEESE_WEDGE)),
-    MOLDY(32, 12.0f, 2.0f, 22, () -> Ingredient.ofItems(ModItems.MOLDY_CHEESE_WEDGE));
+    CHEDDAR(140, 9.0f, 1.0f, 18, () -> Ingredient.ofItems(ModItems.CHEDDAR_CHEESE_WEDGE)),
+    MOLDY(140, 9.0f, 1.0f, 18, () -> Ingredient.ofItems(ModItems.MOLDY_CHEESE_WEDGE));
 
     private final int durability;
     private final float miningSpeed;

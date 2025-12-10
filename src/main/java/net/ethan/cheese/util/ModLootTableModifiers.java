@@ -12,8 +12,8 @@ import net.minecraft.loot.provider.number.UniformLootNumberProvider;
 import net.minecraft.util.Identifier;
 
 public class ModLootTableModifiers {
-    private static final Identifier ZOMBIE_ID
-            = Identifier.of("minecraft", "entities/zombie");
+    private static final Identifier ZOMBIE_ID = Identifier.of("minecraft", "entities/zombie");
+    private static final Identifier CREEPER_ID = Identifier.of("minecraft", "entities/creeper");
 
     public static void modifyLootTables(){
         LootTableEvents.MODIFY.register((key, tablebuilder, source, registry) -> {
@@ -25,6 +25,15 @@ public class ModLootTableModifiers {
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f,1.0f)).build());
 
             tablebuilder.pool(poolBuilder.build());
+            }
+            if (CREEPER_ID.equals(key.getValue())) {
+                LootPool.Builder poolBuilder = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(0.05f))
+                        .with(ItemEntry.builder(ModItems.MOLDY_MUSIC_DISC))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
+
+                tablebuilder.pool(poolBuilder.build());
             }
         });
     }

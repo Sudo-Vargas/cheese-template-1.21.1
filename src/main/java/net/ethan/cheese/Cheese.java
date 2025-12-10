@@ -2,6 +2,8 @@ package net.ethan.cheese;
 
 import net.ethan.cheese.block.ModBlocks;
 import net.ethan.cheese.item.ModItems;
+import net.ethan.cheese.item.ModSounds;
+import net.ethan.cheese.sound.ModJukeboxSongs;
 import net.ethan.cheese.util.ModLootTableModifiers;
 import net.fabricmc.api.ModInitializer;
 
@@ -24,5 +26,8 @@ public class Cheese implements ModInitializer {
         ModItems.registerModItems();
         ModBlocks.registerModBlocks();
         ModLootTableModifiers.modifyLootTables();
+        ModSounds.registerModSounds();
+        ModJukeboxSongs.registerModJukeboxSongs();
+
 	}
 }

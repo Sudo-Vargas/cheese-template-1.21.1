@@ -1,0 +1,10 @@
+{
+  "sound_event": {
+    "sound_id": "cheese:moldy_music"
+  },
+  "description": {
+    "translate": "jukebox_song.cheese.moldy_music"
+  },
+  "length_in_seconds": 180.0,
+  "comparator_output": 5
+}

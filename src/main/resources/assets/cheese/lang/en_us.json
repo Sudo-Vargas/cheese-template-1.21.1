@@ -21,5 +21,9 @@
   "item.cheese.moldy_pickaxe": "Moldy Pickaxe",
   "item.cheese.moldy_shovel": "Moldy Shovel",
   "item.cheese.moldy_axe": "Moldy Axe",
-  "item.cheese.moldy_hoe": "Moldy Hoe"
+  "item.cheese.moldy_hoe": "Moldy Hoe",
+  "jukebox_song.cheese.moldy_music": "Moldy Music",
+
+  "item.cheese.moldy_music_disc": "Music Disc",
+  "item.cheese.moldy_music_disc.desc": "Moldy Music"
 }

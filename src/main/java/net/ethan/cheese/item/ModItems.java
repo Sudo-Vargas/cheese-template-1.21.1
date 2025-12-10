@@ -11,8 +11,17 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.minecraft.item.*;
+import net.minecraft.util.Rarity;
+import net.ethan.cheese.sound.ModJukeboxSongs;
 
 public class ModItems {
+
+
+    public static final Item MOLDY_MUSIC_DISC = registerItem("moldy_music_disc",
+            new Item(new Item.Settings()
+                    .maxCount(1)
+                    .rarity(Rarity.RARE)
+                    .jukeboxPlayable(ModJukeboxSongs.MOLDY_MUSIC)));
 
     // Cheddar Tools
     public static final Item CHEDDAR_SWORD = registerItem("cheddar_sword",
@@ -115,7 +124,7 @@ public class ModItems {
     public static void registerModItems() {
         Cheese.LOGGER.info("Registering mod items for " + Cheese.MOD_ID);
 
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(entries ->{
+            ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(entries ->{
             entries.add(CHEDDAR_CHEESE_WEDGE);
             entries.add(MOLDY_CHEESE_WEDGE);
             entries.add(COLD_CHEESE_SANDWICH);
@@ -136,6 +145,7 @@ public class ModItems {
             entries.add(MOLDY_AXE);
             entries.add(MOLDY_SHOVEL);
             entries.add(MOLDY_HOE);
+            entries.add(MOLDY_MUSIC_DISC);
         });
 
     }
